@@ -1,0 +1,95 @@
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #0c0d13;
+    font-family: 'Caesar Dressing', cursive;
+}
+
+#clock h1 {
+    position: relative;
+    display: block;
+    color: #fff;
+    text-align: center;
+    margin: 10px 0;
+    letter-spacing: 0.4em;
+    font-size: 2.8em;
+    text-align: center;
+    margin-top: -200px;
+    
+}
+#clock #time {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+#clock #time div{
+    position: relative;
+    margin: 0 10px;
+    color: #fff;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004)
+}
+#clock #time div span{
+    position: relative;
+    border-top-left-radius: 5% ;
+    border-top-right-radius: 5% ;
+    width: 130px;
+    height: 100px;
+    background: #030577;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+    z-index: 10;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.2);
+}
+#clock #time div span:nth-child(2){
+    height: 35px;
+    font-size: 1em;
+    letter-spacing: 0.2em;
+    z-index: 9;
+    box-shadow: none;
+    background: #22035c;
+}
+
+
+.sign {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.word {
+      font-size: 5.6rem;
+      text-align: center;
+      line-height: 1;
+      color: #c6e2ff;
+      animation: neon .08s ease-in-out infinite alternate;
+    }
+  
+  
+@keyframes neon {
+    from {
+      text-shadow:
+      0 0 6px rgba(202,228,225,0.92),
+      0 0 30px rgba(202,228,225,0.34),
+      0 0 12px rgba(30,132,242,0.52),
+      0 0 21px rgba(30,132,242,0.92),
+      0 0 34px rgba(30,132,242,0.78),
+      0 0 54px rgba(30,132,242,0.92);
+    }
+    to {
+      text-shadow:
+      0 0 6px rgba(202,228,225,0.98),
+      0 0 30px rgba(202,228,225,0.42),
+      0 0 12px rgba(30,132,242,0.58),
+      0 0 22px rgba(30,132,242,0.84),
+      0 0 38px rgba(30,132,242,0.88),
+      0 0 60px rgba(30,132,242,1);
+    }
+  }
+  
